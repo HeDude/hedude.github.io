@@ -1,95 +1,184 @@
-body, html
-{
-	overflow-x: hidden;
+body, html {
+    overflow-x: hidden;
 }
 
-a:hover, a:focus
-{
-	text-decoration: none;
+a:hover, a:focus {
+    text-decoration: none;
 }
 
-h1, h2
-{
-	margin: 0;
-
+h1, h2 {
+    margin: 0;
 }
 
-p:last-child
-{
-	margin-bottom: 0;
+p:last-child {
+    margin-bottom: 0;
 }
 
-.description
-{
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: 30px;
+.article-container {
+    width: 50%;
 }
 
-.description-text
-{
-	background-color: white;
-	padding: 30px;
+.description {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
-.page-title-text
-{
-	color: white;
-	font-size: 2.2em;
-	padding: 15px 25px;
-	text-align: left;
+.description-text {
+    background-color: white;
+    padding: 30px;
 }
 
-.panel
-{
-	display: block;
-	padding: 15px;	
+.header-container {
+    width: 50%;
 }
 
-.panel-text
-{
-	border: 1px solid white;
-	color: black;	
-	font-style: italic;	
-	width: 100%;
-	height: 100%;
+.navigation-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0;
 }
 
-.panel-white
-{
-	background-color: rgba(255, 255, 255, 0.5);
+    .navigation-container a {
+        text-decoration: none;
+    }
 
-}
-.panel-black
-{
-	background-color: rgba(0, 0, 0, 0.7);
-}
-
-@media screen and (max-width: 1199px) and (min-width: 992px)
-{
+.navigation-panel-item {
+    margin-bottom: 10px;
+    font-size: 1.9em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 991px)
-{
-    .description
-	{
-		margin: 0 0 0 auto;
+.navigation-panel-item-link {
+    padding: 10px;
+}
+
+.navigation-panel-item:hover, .navigation-panel-item:focus, .navigation-panel-item.active {
+    background-color: rgba(241, 241, 241, 0.59);
+}
+
+    .navigation-panel-item:hover .navigation-panel-text-item,
+    .navigation-panel-item:focus .navigation-panel-text-item,
+    .navigation-panel-item.active .navigation-panel-text-item {
+        color: black;
+        border: 1px solid black;
+    }
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page-title-text {
+    color: white;
+    font-size: 2.2em;
+    padding: 15px 25px;
+    text-align: left;
+}
+
+.panel {
+    display: block;
+    padding: 15px;
+}
+
+.panel-black {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.panel-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.panel-keep-ratio,
+.panel-keep-ratio-content {
+    display: block;
+}
+
+.panel-keep-ratio {
+    position: relative;
+}
+
+.panel-keep-ratio-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.panel-keep-ratio:after {
+    display: block;
+    content: '';
+}
+
+.panel-keep-ratio-1-1:after {
+    padding-top: 100%;
+}
+
+.panel-text {
+    border: 1px solid white;
+    color: black;
+    font-style: italic;
+    width: 100%;
+    height: 100%;
+}
+
+.panel-white {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.panel-width-half {
+    width: 49%;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+    .navigation-panel-item {
+        font-size: 1.4em;
     }
 }
 
-@media screen and (max-width: 767px)
-{
+@media screen and (max-width: 991px) {
+    .description {
+        margin: 0 0 0 auto;
+    }
 }
 
-@media screen and (max-width: 480px)
-{
-	.page-title-text
-	{
-		font-size: 1.6em;
-	}
+@media screen and (max-width: 767px) {
+}
 
-	.description-text
-	{
-		padding: 30px 25px;
-	}
+@media screen and (max-width: 480px) {
+    .description-text {
+        padding: 30px 25px;
+    }
+
+    .navigation-panel-item {
+        font-size: 1.4em;
+    }
+
+    .page-title-text {
+        font-size: 1.6em;
+    }
 }
