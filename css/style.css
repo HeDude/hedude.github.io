@@ -90,7 +90,7 @@ p:last-child {
 }
 
 .page-title-text {
-    color: white;
+    color: darkslategrey;
     font-size: 2.2em;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -176,7 +176,8 @@ p:last-child {
 }
 
 .title-text {
-    color: white;
+    color: lightgoldenrodyellow;
+    background-color: rgba(0, 0, 0, 0.5);
     font-size: 3.8em;
     padding-top: 20px;
     padding-bottom: 25px;
