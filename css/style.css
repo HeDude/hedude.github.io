@@ -1,0 +1,95 @@
+body, html
+{
+	overflow-x: hidden;
+}
+
+a:hover, a:focus
+{
+	text-decoration: none;
+}
+
+h1, h2
+{
+	margin: 0;
+
+}
+
+p:last-child
+{
+	margin-bottom: 0;
+}
+
+.description
+{
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+.description-text
+{
+	background-color: white;
+	padding: 30px;
+}
+
+.page-title-text
+{
+	color: white;
+	font-size: 2.2em;
+	padding: 15px 25px;
+	text-align: left;
+}
+
+.panel
+{
+	display: block;
+	padding: 15px;	
+}
+
+.panel-text
+{
+	border: 1px solid white;
+	color: black;	
+	font-style: italic;	
+	width: 100%;
+	height: 100%;
+}
+
+.panel-white
+{
+	background-color: rgba(255, 255, 255, 0.5);
+
+}
+.panel-black
+{
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1199px) and (min-width: 992px)
+{
+}
+
+@media screen and (max-width: 991px)
+{
+    .description
+	{
+		margin: 0 0 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px)
+{
+}
+
+@media screen and (max-width: 480px)
+{
+	.page-title-text
+	{
+		font-size: 1.6em;
+	}
+
+	.description-text
+	{
+		padding: 30px 25px;
+	}
+}
