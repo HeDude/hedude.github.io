@@ -54,6 +54,8 @@ p:last-child {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
     padding: 0;
+    justify-items: center; /* Horizontally center items */
+    align-items: center; /* Vertically center items */
 }
 
     .navigation-container a {
@@ -173,9 +175,21 @@ p:last-child {
     float: right;
 }
 
+.title-text {
+    color: white;
+    font-size: 3.8em;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
 @media screen and (max-width: 1199px) and (min-width: 992px) {
     .navigation-panel-item {
         font-size: 1.4em;
+    }
+
+    .title-text {
+        font-size: 3em;
     }
 }
 
@@ -199,5 +213,9 @@ p:last-child {
 
     .page-title-text {
         font-size: 1.6em;
+    }
+
+    .title-text {
+        font-size: 3em;
     }
 }
