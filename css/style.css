@@ -1,3 +1,10 @@
+body {
+    background-image: url('../image/lega-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 body, html {
     overflow-x: hidden;
 }
@@ -21,7 +28,7 @@ p:last-child {
 .description {
     max-width: 500px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 0px;
 }
 
 .description-text {
@@ -74,7 +81,10 @@ p:last-child {
 .page-title-text {
     color: white;
     font-size: 2.2em;
-    padding: 15px 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    margin-left: -7px;
     text-align: left;
 }
 
