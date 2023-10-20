@@ -49,6 +49,14 @@ p:last-child {
     width: 50%;
 }
 
+.header-link {
+    text-decoration: none;
+}
+
+    .header-link:hover header {
+        background-color: midnightblue;
+    }
+
 .navigation-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
