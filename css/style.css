@@ -36,6 +36,15 @@ p:last-child {
     padding: 30px;
 }
 
+.footer {
+    color: coral;
+}
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
 .header-container {
     width: 50%;
 }
