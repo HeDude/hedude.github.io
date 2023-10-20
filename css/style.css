@@ -183,13 +183,25 @@ p:last-child {
     float: right;
 }
 
+.subtitle-text,
 .title-text {
-    color: lightgoldenrodyellow;
     background-color: rgba(0, 0, 0, 0.5);
-    font-size: 3.8em;
-    padding-top: 20px;
-    padding-bottom: 25px;
+    color: lightgoldenrodyellow;
+    padding-bottom: 15px;
     text-align: center;
+}
+
+.subtitle-text {
+    padding-top: 0px;
+}
+    .subtitle-text a {
+        text-decoration: none;
+        color: lightgoldenrodyellow;
+    }
+
+.title-text {
+    padding-top: 20px;
+    font-size: 3.8em;
 }
 
 @media screen and (max-width: 1199px) and (min-width: 992px) {
