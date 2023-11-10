@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\image",
+    "\\js"
   ],
+  "SelectedNode": "\\image\\lega-bg.png",
   "PreviewInSolutionExplorer": false
 }

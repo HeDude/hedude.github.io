@@ -2,7 +2,8 @@ body {
     background-image: url('../image/hedude_bg.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed; /* This will ensure the image doesn't scroll with the page */
+    background-position: top center; /* Aligns the top of the image with the top of the browser window */
 }
 
 body, html {
@@ -148,6 +149,12 @@ p:last-child {
     bottom: 0;
     right: 0;
     left: 0;
+}
+
+a.panel-keep-ratio-content {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover; /* Adjust as necessary */
 }
 
 .panel-keep-ratio:after {
